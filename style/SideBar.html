@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mayank</title>
+<style>
+
+.opensidebar
+{
+	top:2vw;
+	left:2vw;
+	width:21px;
+	height: 21px;
+	z-index: 5;
+	position: absolute;
+}
+.spinner
+{
+	background: #fff;
+	margin-top: 3px;
+	width: 21px;
+	height:4px;
+	display: block;
+}
+#sidebarmenu
+{
+	top:10%;
+	background: #2e86de;
+	width:25vw;
+	height:auto;
+	position: absolute;
+	z-index: 4;
+	transform: translateX(-30vw);
+	transition: transform 1s;
+}
+#sidemenu
+{
+	display:none;
+}
+#sidemenu:checked ~ #sidebarmenu
+{
+	transform: translateX(0vw);
+}
+#sidebarmenu a
+{
+	font:16px calibri;
+	text-decoration: none;
+	color:#fff;
+	border-bottom: 1px solid #fff;
+	padding: 20px;
+	display: block;
+} 
+#sidebarmenu a:hover
+{
+	color:#333;
+}
+
+</style>
+	</head>
+	<body bgcolor="#333">
+
+		<div id="sidebar">
+
+			<input type="checkbox" id="sidemenu">
+			<label for="sidemenu" class="opensidebar">
+				<span class="spinner"></span>
+				<span class="spinner"></span>
+				<span class="spinner"></span>
+			</label>	
+
+			<div id="sidebarmenu">
+				<a href="#"> New Tab </a>
+				<a href="#"> History </a>
+				<a href="#"> Download </a>
+				<a href="#"> Bookmark </a>
+				<a href="#"> Share </a>
+				<a href="#"> Translate </a>
+				<a href="#"> Add To Home Screen </a>
+				<a href="#"> Desktop Set </a>
+				<a href="#"> Setting </a>
+				<a href="#"> Help </a>
+			</div>
+
+		</div>
+
+	</body>
+</html>

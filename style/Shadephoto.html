@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Mayank </title>
+<style>
+
+body
+{
+	background: #333;
+	padding: 10% 30%;
+}
+	
+#photo_box
+{
+	width: 400px;
+	height: 500px;
+	border: 5px inset #ace;
+	position: relative;
+}
+
+#photo_box :is(.shade1,.shade2)
+{
+	width: 300px;
+	height: 400px;
+	position: absolute; 
+}
+
+#photo_box img[name="master"]
+{
+	top:45px;
+	left: 45px;
+	width: 300px;
+	height: 400px;
+	position: absolute;
+	object-fit:cover;
+}
+
+.shade1
+{
+	top:20px;
+	left: 20px;
+	background: #fff;
+}
+.shade2
+{
+	top:80px;
+	left: 80px;
+	background: #000;
+}
+
+
+
+</style>
+
+	</head>
+	<body>
+
+		<div id="photo_box">
+
+			<div class="shade1"> </div>
+			<div class="shade2"> </div>
+			<img src="../rtx/x11.jpg" name="master">
+			
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mayank</title>
+<style>
+
+*{
+    margin:0;
+    font-family:'aril black';
+    overflow: hidden;
+}
+body{
+    width:100vw;
+    height: 100vh;
+    background:linear-gradient(to right,lime,cyan);
+}
+h1{
+    position:absolute;
+    top:50%;
+    left:30%;
+    color:#000;
+}
+h1::first-letter{
+    color:crimson;
+}
+.frame{
+    width:100vw;
+    height: 100vh;
+    position: relative;
+}
+.frame div{
+    width:70px;
+    height: 70px;
+    border:5px solid black;
+    position: absolute;
+}
+.frame div:nth-child(1){
+    top:10%;
+    left:30%;
+    animation:square 5s linear infinite;
+}
+.frame div:nth-child(2){
+    top:20%;
+    left:70%;
+    animation:square 8s linear infinite;
+}
+.frame div:nth-child(3){
+    top:30%;
+    left:5%;
+    animation:square 6s linear infinite;
+}
+.frame div:nth-child(4){
+    top:40%;
+    left:80%;
+    animation:square 7s linear infinite;
+}
+.frame div:nth-child(5){
+    top:50%;
+    left:20%;
+    animation:square 9s linear infinite;
+}
+.frame div:nth-child(6){
+    top:60%;
+    left:60%;
+    animation:square 4s linear infinite;
+}
+.frame div:nth-child(7){
+    top:70%;
+    left:30%;
+    animation:square 5s linear infinite;
+}
+.frame div:nth-child(8){
+    top:80%;
+    left:80%;
+    animation:square 6s linear infinite;
+}
+.frame div:nth-child(9){
+    top:70%;
+    left:10%;
+    animation:square 4s linear infinite;
+}
+
+@keyframes square{
+    0%{
+        transform: scale(0) translateY(0) rotate(0);
+        opacity:1;
+    }
+    100%{
+        transform: scale(1.2) translateY(-90px) rotate(360deg);
+        opacity:0.5;
+    }
+}
+
+</style>
+	</head>
+	<body>
+        <h1> I AM BACK INTO IMAGINE </h1>
+        <div class="frame">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+	</body>
+</html>

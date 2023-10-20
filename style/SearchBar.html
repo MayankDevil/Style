@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mayank</title>
+<style>
+
+body{
+	margin:0;
+	padding:30%;
+	background:#131c25;
+}
+#search{
+	background:#6f0b27;
+	width:50px;
+	height:50px;
+	padding:5px;
+	border-radius: 20px;
+	transition: width 2s;
+	display: flex;
+	align-items: center;
+}	#search:hover{
+	width:390px;
+	z-index: 2;
+}
+#search input[type="image"]{
+	width: 50px;
+	height: 50px;
+	transition: all 1s linear;
+}	#search:hover > input[type="image"]{
+	order:2;
+}
+#search input[type="search"]{
+	font:18px calibri;
+	color:#6f0b27;
+	text-align: center;
+	margin:0px;
+	padding: 10px;
+	border-radius:20px;
+	border:none;
+	outline: none;
+	width:100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 2s ;
+}	#search:hover > input[type="search"]{
+	visibility: visible;
+	opacity :1;
+	margin-left: 5px;
+}
+
+</style>
+	</head>
+	<body>
+
+		<div id="search">
+			<input type="image" src="../rtx/logo/search.png">
+			<input type="search" name="Search"placeholder="Please Type To Search .........">
+		</div>
+
+	</body>
+</html>

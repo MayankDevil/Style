@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+-   index.html
+-   library web page about work
+-   magic project
+-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Mayank </title>
+        <style>
+            body {
+                margin: 0;
+                width: 100vw;
+                height: 100vh;
+                overflow: hidden;
+                font-family: arial;
+                display: grid;
+                grid-template-rows: 1fr 10fr 1fr;
+            }
+            header{
+                height: 5vh;
+                padding: 0 5rem;
+                display:flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #2c3e50;
+            }
+            a{
+                color:#27ae60;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #2ecc71;
+                text-decoration: underline;
+            }
+
+            #menu {
+                width: max-content;
+                /* border:1px solid #000; */
+            }
+
+            #menu>ul {
+                background-color: #2c3e50;
+            }
+
+            #menu ul {
+                list-style: none;
+                position: relative;
+                margin: 0;
+                padding: 0;
+                float: left;
+            }
+
+            #menu ul a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 15px;
+                line-height: 32px;
+                padding: 0 15px;
+                display: block;
+            }
+
+            #menu ul li {
+                float: left;
+                position: relative;
+                margin: 0;
+                padding: 0;
+            }
+
+            #menu ul ul {
+                position: absolute;
+                background-color: #27ae60;
+                top: 100%;
+                left: 0;
+                display: none;
+            }
+
+            #menu ul ul li {
+                border-left: 3px solid #27ae60;
+                float: none;
+                width: 200px;
+            }
+
+            #menu ul ul ul {
+                top: 0;
+                left: 100%;
+            }
+
+            #menu ul li:hover>ul {
+                display: block;
+            }
+
+            #menu ul li:hover {
+                background-color: #2ecc71;
+            }
+
+            #menu ul ul li:hover {
+                border-left: 3px solid #2c3e50;
+            }
+
+            iframe[name="home_frame"] {
+                width: 100%;
+                height: 95vh;
+                border: 1px solid #2c3e50;
+            }
+        </style>
+        <!-- <base href="d:/web/"> -->
+    </head>
+
+    <body>
+
+        <header>
+
+            <div id="menu">
+                <ul>
+                    <li><a href='d:/web' target='home_frame'> Home </a></li>
+                    <li><a href='#' target='home_frame'> CSS </a>
+                        <ul>
+                            <li><a href='style/background.html' target='home_frame'> Background </a></li>
+                            <li><a href='#' target='home_frame'> Image </a>
+                                <ul>
+                                    <li><a href='style/imageslide.html' target='home_frame'> Image Slide </a></li>
+                                    <li><a href='style/rotatecard.html' target='home_frame'> Rotate Card </a></li>
+                                    <li><a href='style/shadephoto.html' target='home_frame'> Shade Photo </a>
+                                        <ul>
+                                            <li><a href='#' target='home_frame'> subdeepmenu 1 </a></li>
+                                            <li><a href='#' target='home_frame'> subdeepmenu 2 </a></li>
+                                            <li><a href='#' target='home_frame'> subdeepmenu 3 </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href='style/datasection.html' target='home_frame'> Data Section </a></li>
+                            <li><a href='style/loginmodal.html' target='home_frame'> Login Modal </a></li>
+                            <li><a href='style/preloader.html' target='home_frame'> Preloader </a></li>
+                            <li><a href='style/searchbar.html' target='home_frame'> Search Bar </a></li>
+                            <li><a href='style/sidebar.html' target='home_frame'> Side Bar </a></li>
+                            <li><a href='style/tab.html' target='home_frame'> Tab Content </a></li>
+                        </ul>
+                    </li>
+                    <li><a href='#' target='home_frame'> Javascript </a>
+                        <ul>
+                            <li><a href='script/calculater.html' target='home_frame'> Calculater </a></li>
+                            <li><a href='script/color.html' target='home_frame'> Color Magic </a></li>
+                            <li><a href='script/counter.html' target='home_frame'> Counter </a></li>
+                            <li><a href='script/date.html' target='home_frame'> Date </a></li>
+                            <li><a href='script/hardcode.html' target='home_frame'> Hard Code </a></li>
+                            <li><a href='script/pictureframe.html' target='home_frame'> Picture Frame </a></li>
+                            <li><a href='script/progress.html' target='home_frame'> Progress Bar </a></li>
+                            <li><a href='script/searchbar.html' target='home_frame'> Search Bar </a></li>
+                            <li><a href='script/time.html' target='home_frame'> Time </a></li>
+                        
+                        </ul>
+                    </li>
+                    <li><a href='#' target='home_frame'> Knowlegde </a>
+                        <ul>
+                            <li><a href="website 0/index.html" target='home_frame'> Indrdanus </a></li>
+                            <li><a href="website 1/index.html" target='home_frame'> Soceity </a></li>
+                            <li><a href="website 2/index.html" target='home_frame'> Bharat </a></li>
+                            <li><a href="website 3/index.html" target='home_frame'> Cyber World </a></li>
+                            <li><a href="website 4/index.html" target='home_frame'> Master </a></li>
+                            <li><a href="website 5/index.html" target='home_frame'> Anpurana </a></li>
+                            <li><a href="website 6/index.html" target='home_frame'> Evil-Corp </a></li>
+                            <li><a href="website 7/index.html" target='home_frame'> Search Enginee </a></li>
+                            <li><a href="website 8/index.html" target='home_frame'> Entity </a></li>
+                            <li><a href="website 9/index.html" target='home_frame'> Gadit </a></li>
+                            <li><a href="website 10/index.html" target='home_frame'> Cyber Law </a></li>
+                            <li><a href="website 11/index.html" target='home_frame'> Secure </a></li>
+                            <li><a href="website 12/index.html" target='home_frame'> Mercenary </a></li>
+                            <li><a href="website 13/index.html" target='home_frame'> Darkside </a></li>
+                        </ul>
+                    </li>
+                    <li><a href='' target='home_frame'> Resume </a></li>
+                    <li><a href='Website 14/index.html' target='home_frame'> About </a></li>
+                </ul>
+
+            </div>
+
+            
+            <a href="mailto:alishahell742@gmail.com"> mayank </a>
+
+        </header>
+
+        <iframe src="" name="home_frame"></iframe>
+
+    </body>
+</html>
