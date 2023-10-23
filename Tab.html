@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+-	style "CSS components"
+-	Developed | Desgined by Mayank
+-	https://github.com/MayankDevil
+-	location : ./index
+-->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MayankDevil</title>
+	<!--
+		---------
+		| style |
+		---------
+	-->
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+			font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji";
+			color:#20252b;
+			text-decoration: none;
+			font-weight: normal;
+			border: none;
+			outline: none;
+			box-sizing: border-box;
+		}
+		body{
+			margin: 3rem;
+		}
+		.tab-wrap
+		{
+			display: block;
+			margin:1rem auto;
+			width:80%;
+			list-style:none;
+			padding:0;
+			position:relative;
+			font:14px arial;
+			color:#343a40;
+		}
+		.tab-wrap input[type="radio"]{
+			display: none;
+		}
+		.tab-wrap li
+		{
+			float:left;
+			dispaly:block;
+		}
+		.tab-wrap label
+		{
+			background:#f6e58d;
+			dispaly:block;
+			font-size: 1rem;
+			padding:1rem 2rem;
+			margin-right: 10px;
+			cursor:pointer;
+		}
+		.tab-wrap .tab-content
+		{
+			padding:2rem;
+			position:absolute;
+			left:0;
+			top:3rem;
+			display:none;
+			width:100%;
+			box-shadow: 2px 2px 5px #6c757d;
+			border-radius: 1rem;
+		}
+		.tab-wrap input[id^=tab]:checked + label
+		{
+			background:#ffbe76;
+			padding: 1rem;
+		}
+		.tab-wrap [id^="tab"]:checked ~ .tab-content 
+		{
+			display:block;
+		}
+		h1{
+			color:#343a40;
+		}
+		p{
+			padding: 2rem 0;
+			line-height: 2rem;
+			font-size: 1rem;
+			color:#6c757d;
+		}
+
+
+	</style>
+
+</head>
+
+<body>
+
+	<!-- tab wrapper -->
+	<ul class="tab-wrap">
+		<!-- 1 -->
+		<li>
+			<input type="radio" id="tab-1" name="tab" checked>
+			<label for="tab-1"><caption> First Tab </caption></label>
+			<div class="tab-content">
+
+				<h1> Tab 1 </h1>
+
+				<p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga odit minus suscipit ducimus libero sed dolorem obcaecati quibusdam mollitia repellat iure dignissimos molestiae at, nobis quos nemo incidunt, natus architecto asperiores corporis neque. Beatae aliquid unde, sunt ab ut repellat id doloremque culpa blanditiis veritatis adipisci fugit asperiores, quam iste tenetur ipsam voluptate praesentium rem! Vitae molestiae nam earum error. Accusamus in quo et cumque, temporibus deleniti facilis. Tempore omnis, accusantium cumque cupiditate veritatis impedit accusamus officia voluptatibus temporibus expedita consequatur eum officiis quos, qui placeat distinctio id quidem possimus atque recusandae dignissimos nisi vitae adipisci. Hic officiis repellat odio. </p>
+
+				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus placeat nam quis, dolorem repellat ipsum autem. Ex sit perspiciatis, voluptate expedita eveniet aspernatur quis culpa hic ab atque explicabo sapiente dolorum ea voluptatum, optio voluptas omnis at modi molestiae labore. Perferendis nobis odit voluptate debitis! Commodi quia consequatur accusamus non? </p>
+
+			</div>
+		</li>
+		<!-- 2 -->
+		<li>
+			<input type="radio" id="tab-2" name="tab">
+			<label for="tab-2"><caption> Second Tab </caption></label>
+			<div class="tab-content">
+
+				<h1> Tab 2 </h1>
+
+				<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio doloremque beatae atque velit ullam, molestias delectus natus voluptates ut rem mollitia, optio, perspiciatis soluta temporibus saepe in magni adipisci maiores nesciunt cupiditate quos! Temporibus non voluptates beatae architecto placeat dolorem reiciendis eaque sit neque mollitia necessitatibus possimus, quod accusantium quis saepe delectus est cumque earum, voluptas et odit sed? Officiis harum architecto at unde omnis cum vel fugit! Voluptatum illo placeat magni ipsum vitae suscipit fugiat praesentium consequuntur iusto corporis nulla natus veritatis, nam, omnis in enim reprehenderit dolorum architecto aliquam inventore culpa dolore! Harum voluptate dignissimos modi quaerat recusandae fugiat sunt quam amet, illum temporibus explicabo commodi expedita tempore voluptas at obcaecati nobis provident nemo iusto magnam voluptatum delectus ea hic reprehenderit? Eos velit, ad facilis labore amet accusantium quisquam culpa doloribus harum sapiente quos natus reiciendis minus facere officia temporibus rerum nostrum sequi aliquid assumenda totam minima atque. </p>
+
+				<p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor molestias obcaecati ab dolorem quisquam assumenda eum illo nulla repellendus tenetur. </p>
+
+			</div>
+		</li>
+		<!-- 3 -->
+		<li>
+			<input type="radio" id="tab-3" name="tab">
+			<label for="tab-3"><caption> Third Tab </caption></label>
+			<div class="tab-content">
+				
+				<h1> Tab 3 </h1>
+
+				<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quae quibusdam, maxime dolore laboriosam eum ratione dolor ad dicta, nam ea? Ipsum placeat accusantium, quod ipsa harum tempora recusandae iste voluptates quo quam quidem laborum minima aspernatur incidunt rerum nobis repellendus eaque consequuntur repellat excepturi, itaque culpa vitae eveniet est! </p>
+
+				<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quae quibusdam, maxime dolore laboriosam eum ratione dolor ad dicta, nam ea? Ipsum placeat accusantium, quod ipsa harum tempora recusandae iste voluptates quo quam quidem laborum minima aspernatur incidunt rerum nobis repellendus eaque consequuntur repellat excepturi, itaque culpa vitae eveniet est! </p>
+
+				<p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quae quibusdam, maxime dolore laboriosam eum ratione dolor ad dicta, nam ea? Ipsum placeat accusantium, quod ipsa harum tempora recusandae iste voluptates quo quam quidem laborum minima aspernatur incidunt rerum nobis repellendus eaque consequuntur repellat excepturi, itaque culpa vitae eveniet est! </p>
+
+				
+			</div>	
+		</li>
+	</ul>
+
+</body>
+
+</html>
+<!-- the end -->

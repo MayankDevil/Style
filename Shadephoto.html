@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!--
+-	style "CSS components"
+-	Developed | Desgined by Mayank
+-	https://github.com/MayankDevil
+-	location : ./ShadePhoto
+-->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MayankDevil</title>
+	<!--
+		---------
+		| style |
+		---------
+	-->
+	<style>
+		#photo_box
+		{
+			width: 400px;
+			height: 500px;
+			border: 5px inset #ced6e0;
+			position: relative;
+		}
+
+		#photo_box :is(.shade1,.shade2)
+		{
+			width: 300px;
+			height: 400px;
+			position: absolute; 
+		}
+
+		#photo_box img[name="master"]
+		{
+			top:45px;
+			left: 45px;
+			width: 300px;
+			height: 400px;
+			position: absolute;
+			object-fit:cover;
+		}
+
+		.shade1
+		{
+			top:20px;
+			left: 20px;
+			background: #6c757d;
+		}
+		.shade2
+		{
+			top:80px;
+			left: 80px;
+			background: #343a40;
+		}
+	</style>
+
+</head>
+
+<body>
+
+	<div id="photo_box">
+
+		<div class="shade1"> </div>
+		<div class="shade2"> </div>
+		<img src="../data/3.jpg" name="master">
+		
+	</div>
+
+</body>
+
+</html>
+<!-- the end -->

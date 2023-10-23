@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+-	style "CSS components"
+-	Developed | Desgined by Mayank
+-	https://github.com/MayankDevil
+-	location : ./Modal
+-->
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MayankDevil</title>
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+			font-family:SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+			font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji";
+			color:#20252b;
+			text-decoration: none;
+			font-weight: normal;
+			border: none;
+			outline: none;
+			box-sizing: border-box;
+		}
+		body{
+			display: grid;
+			align-items: center;
+			place-content: center;
+		}
+		#modal{
+			display: none;
+		}
+		#Login .Open{
+			display: inline-block;
+			margin:20vh auto;
+			padding: 1rem 2rem;
+			font-size: 1rem;
+			background:#ffc107;
+		}
+		#Login .Open:hover{
+			opacity: 1rem;
+		}
+		#Login form[Name="Login"] .close{
+			text-align: right;
+			font-size: 2rem;
+		}
+		#Login form[Name="Login"] .close:hover{
+			color:#dc3545;
+		}
+		/* modal */
+		#Login form[Name="Login"], #Login .back{
+			height: 0px;
+			width:0px;
+			opacity: 0px;
+			visibility: hidden;
+			cursor: pointer;
+			transition: opacity  0.5s ease-in;
+		}
+		#Login #modal:checked ~ .back{
+			background: rgba(0,0,0,0.8);
+			width:100vw;
+			height: 100vh;
+			position: fixed;
+			left:0px;
+			top:0px;
+			z-index: 10;
+			visibility: visible;
+		}
+		#Login #modal:checked ~ form[Name="Login"]{
+			background:#eee;
+			color:#2C3E50 ;
+			width: 500px;
+			height: 450px;
+			padding: 15px;
+			position: fixed;
+			top:12%;
+			left: calc(50% - 200px);
+			z-index: 11;
+			visibility: visible;
+		}
+
+	</style>
+
+</head>
+
+<body>
+	<!-- { login } -->
+	<div id="Login">
+
+		<input type="checkbox" id="modal">
+			<label for="modal" class="Open"> Login </label>
+		<div class="back"></div>
+
+		<form name="Login">
+
+			<label for="modal" class="close"> &times; </label>
+			
+			<h1> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, repellendus! </h1>
+			
+		</form>	
+
+	</div>
+
+</body>
+
+</html>
+<!-- the end -->
