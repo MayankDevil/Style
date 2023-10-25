@@ -1,9 +1,13 @@
-# style
+# 🚀 style
 
-_CSS Components it is my hardware to learn or understand CSS & HTML teachstac_
+#### this repository is collection of CSS based components that prsent my hard work
 
-- TeachStack : { HTML |CSS }
-- Work : { Self }
-- Developer | Designed by { Mayank }
-- URL : https://mayankdevil.github.io/style/
----
+## 🛠 TechStack
+
+** only use { HTML | CSS }**
+
+## 🔗 Links
+
+https://mayankdevil.github.io/style/
+
+## 🧠 Developed by Mayank
