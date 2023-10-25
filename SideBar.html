@@ -1,86 +1,109 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Mayank</title>
-<style>
+<!--
+-	style "CSS components"
+-	Developed | Desgined by Mayank
+-	https://github.com/MayankDevil
+-	location : ./SideBar
+-->
+<html lang="en">
 
-.opensidebar
-{
-	top:2vw;
-	left:2vw;
-	width:21px;
-	height: 21px;
-	z-index: 5;
-	position: absolute;
-}
-.spinner
-{
-	background: #fff;
-	margin-top: 3px;
-	width: 21px;
-	height:4px;
-	display: block;
-}
-#sidebarmenu
-{
-	top:10%;
-	background: #2e86de;
-	width:25vw;
-	height:auto;
-	position: absolute;
-	z-index: 4;
-	transform: translateX(-30vw);
-	transition: transform 1s;
-}
-#sidemenu
-{
-	display:none;
-}
-#sidemenu:checked ~ #sidebarmenu
-{
-	transform: translateX(0vw);
-}
-#sidebarmenu a
-{
-	font:16px calibri;
-	text-decoration: none;
-	color:#fff;
-	border-bottom: 1px solid #fff;
-	padding: 20px;
-	display: block;
-} 
-#sidebarmenu a:hover
-{
-	color:#333;
-}
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MayankDevil</title>
+	<!--
+		---------
+		| style |
+		---------
+	-->
+	<style>
+		*{
+			margin:0;
+			padding: 0;
+			font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji";
+			color:#20252b;
+			text-decoration: none;
+			font-weight: normal;
+			border: none;
+			outline: none;
+			box-sizing: border-box;
+		}
+		body{
+			background: #343a40;
+		}
+		.opensidebar{
+			top:2vw;
+			left:2vw;
+			width:21px;
+			height: 21px;
+			z-index: 5;
+			position: absolute;
+		}
+		.spinner{
+			font-size: 2rem;
+			color:#f8f9fa;
+		}
+		.spinner:hover{
+			color:#0097e6	;
+		}
+		#sidebarmenu{
+			top:10%;
+			background: #0097e6;
+			width:25vw;
+			height:auto;
+			position: absolute;
+			z-index: 4;
+			transform: translateX(-30vw);
+			transition: transform 1s;
+		}
+		#sidemenu{
+			display:none;
+		}
+		#sidemenu:checked ~ #sidebarmenu{
+			transform: translateX(0vw);
+		}
+		#sidebarmenu a{
+			font-size:1rem;
+			text-decoration: none;
+			color:#f8f9fa;
+			border-bottom: 1px solid #343a40;
+			padding: 20px;
+			display: block;
+		} 
+		#sidebarmenu a:hover{
+			background: #00a8ff;
+			font-weight: bold;
+			color:#20252b;
+		}
 
-</style>
-	</head>
-	<body bgcolor="#333">
+	</style>
 
-		<div id="sidebar">
+</head>
 
-			<input type="checkbox" id="sidemenu">
-			<label for="sidemenu" class="opensidebar">
-				<span class="spinner"></span>
-				<span class="spinner"></span>
-				<span class="spinner"></span>
-			</label>	
+<body>
+	<!-- { side bar } -->
+	<div id="sidebar">
 
-			<div id="sidebarmenu">
-				<a href="#"> New Tab </a>
-				<a href="#"> History </a>
-				<a href="#"> Download </a>
-				<a href="#"> Bookmark </a>
-				<a href="#"> Share </a>
-				<a href="#"> Translate </a>
-				<a href="#"> Add To Home Screen </a>
-				<a href="#"> Desktop Set </a>
-				<a href="#"> Setting </a>
-				<a href="#"> Help </a>
-			</div>
+		<input type="checkbox" id="sidemenu">
+		<label for="sidemenu" class="opensidebar">
+			<span class="spinner">&#9776;</span>
+		</label>	
 
+		<div id="sidebarmenu">
+			<a href="#"> New Tab </a>
+			<a href="#"> History </a>
+			<a href="#"> Download </a>
+			<a href="#"> Bookmark </a>
+			<a href="#"> Share </a>
+			<a href="#"> Translate </a>
+			<a href="#"> Add To Home Screen </a>
+			<a href="#"> Desktop Set </a>
+			<a href="#"> Setting </a>
+			<a href="#"> Help </a>
 		</div>
 
-	</body>
+	</div>
+
+</body>
 </html>

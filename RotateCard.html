@@ -1,70 +1,86 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Mayank</title>
-<style>
+<!--
+-	style "CSS components"
+-	Developed | Desgined by Mayank
+-	https://github.com/MayankDevil
+-	location : ./index
+-->
+<html lang="en">
 
-body
-{
-	background: #333;
-	padding: 10% 30%;
-	color : #abc;
-}
-img
-{
-	width: 100%;
-	height: auto;
-	object-fit: cover;
-}
-.card
-{
-	width: 300px;
-	height: 500px;
-	border:1px solid #abc;
-	perspective:500px;
-}
-.content
-{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	transition: transform 1s linear;
-	transform-style: preserve-3d;
-}
-.card:hover .content
-{
-	transform: rotateY(180deg);
-}
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>MayankDevil</title>
+	<!--
+		---------
+		| style |
+		---------
+	-->
+	<style>
 
-.front,.back
-{
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	backface-visibility: hidden;
-	background: #fff;
-}
-.back
-{
-	background:#000;
-	transform:rotateY(180deg);
-}
+		body
+		{
+			background: #343a40;
+		}
+		img
+		{
+			width: 100%;
+			height: 100%;
+			object-fit:cover;
+		}
+		.card
+		{
+			width: 300px;
+			margin:5rem auto;
+			height: 500px;
+			border:1px solid #dff9fb;
+			perspective:800px;
+		}
+		.content
+		{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			transition: transform 1s linear;
+			transform-style: preserve-3d;
+		}
+		.card:hover .content
+		{
+			transform: rotateY(180deg);
+		}
 
+		.front,.back
+		{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			backface-visibility: hidden;
+			background:#6c757d;
+		}
+		.back
+		{
+			background:#f8f9fa;
+			transform:rotateY(180deg);
+		}
 
-</style>
-	</head>
-	<body>
+	</style>
 
+</head>
 
-
-		<div class="card">
-			<div class="content">
-				<div class="front"> <img src="../rtx/x11.jpg"> What can I do for you </div>
-				<div class="back"> <img src="../rtx/x11.jpg"> Can you ready to do </div>
-			</div>
+<body>
+	<!-- { rotate card } -->
+	<div class="card">
+		<!-- [ container between front & back ] -->
+		<div class="content">
+			<!-- ( front ) -->
+			<div class="front"> <img src="../data/3.jpg"> </div>
+			<!-- ( back ) -->
+			<div class="back"> <img src="../data/4.png"> </div>
+		
 		</div>
+	</div>
 
-
-
-	</body>
+</body>
 </html>
+<!-- the end -->
