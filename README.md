@@ -8,6 +8,6 @@
 
 ## 🔗 Links
 
-https://mayankdevil.github.io/style/
+##### <https://mayankdevil.github.io/Style/>
 
 ## 🧠 Developed by Mayank
